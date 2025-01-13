@@ -4,7 +4,6 @@ import { and, eq, inArray } from "drizzle-orm";
 import { createId } from "@paralleldrive/cuid2";
 import { zValidator } from "@hono/zod-validator";
 import { clerkMiddleware, getAuth  } from "@hono/clerk-auth";
-// import { HTTPException } from "hono/http-exception";
 import { db } from "@/db/drizzle";
 import { categories, insertCategorySchema } from "@/db/schema";
 
