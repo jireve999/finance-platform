@@ -5,14 +5,7 @@ import { ArrowUpDown } from "lucide-react"
 import { client } from "@/lib/hono"
 import { Button } from "@/components/ui/button"
 import { Checkbox } from "@/components/ui/checkbox"
-// // This type is used to define the shape of our data.
-// // You can use a Zod schema here if you want.
-// export type Payment = {
-//   id: string
-//   amount: number
-//   status: "pending" | "processing" | "success" | "failed"
-//   email: string
-// }
+import { Actions } from "./actions"
 
 export type ResponseType = InferResponseType<typeof client.api.accounts.$get, 200>["data"][0];
 
@@ -39,10 +32,6 @@ export const columns: ColumnDef<ResponseType>[] = [
     enableSorting: false,
     enableHiding: false,
   },
-  // {
-  //   accessorKey: "status",
-  //   header: "Status",
-  // },
   {
     accessorKey: "name",
     header: ({ column }) => {
@@ -57,8 +46,8 @@ export const columns: ColumnDef<ResponseType>[] = [
       )
     },
   },
-  // {
-  //   accessorKey: "amount",
-  //   header: "Amount",
-  // },
+  {
+    id: "actions",
+    cell: ({ row }) => <Actions id={row.original.id} />
+  }
 ]
