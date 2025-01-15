@@ -57,7 +57,7 @@ export const NewTransactionSheet = () => {
     accountQuery.isLoading;
 
   const onSubmit = (values: FormValues) => {
-    createMutation.mutateAsync(values, {
+    createMutation.mutate(values, {
       onSuccess: () => {
         onClose();
       },
