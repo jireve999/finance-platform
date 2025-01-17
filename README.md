@@ -41,8 +41,12 @@ npm run db:generate
 ```bash
 npm run db:migrate
 ```
+3.Create a bunch of data
+```bash
+npm run db:seed
+```
 
-3.Launches Drizzle Studio, a tool for visualizing and interactively managing the database. (optional)
+4.Launches Drizzle Studio, a tool for visualizing and interactively managing the database. (optional)
 ```bash
 npm run db:studio
 ```
