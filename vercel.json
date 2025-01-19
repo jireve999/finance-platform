@@ -1,11 +1,6 @@
 {
-  "builds": [
-    {
-      "src": "next.config.js",
-      "use": "@vercel/next",
-      "config": {
-        "buildCommand": "next build --legacy-peer-deps"
-      }
-    }
-  ]
+  "version": 2,
+  "env": {
+    "NEXT_PUBLIC_APP_URL": "https://finance-platform-tau.vercel.app"
+  }
 }
