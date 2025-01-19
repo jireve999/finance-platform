@@ -3,7 +3,19 @@ import { format } from "date-fns";
 import { formatCurrency } from "@/lib/utils";
 import { Separator } from "@/components/ui/separator";
 
-export const CustomTooltip = ({ active, payload}: any) => {
+interface TooltipPayload {
+  payload: {
+    date: Date;
+  };
+  value: number;
+}
+
+interface CustomTooltipProps {
+  active: boolean;
+  payload: TooltipPayload[];
+}
+
+export const CustomTooltip = ({ active, payload }: CustomTooltipProps) => {
   if (!active) return null;
 
   const date = payload[0].payload.date;

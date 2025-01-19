@@ -7,11 +7,6 @@ import { NavButton } from "@/components/nav-button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Button } from "./ui/button";
 
-type Props = {
-  href: string;
-  label: string;
-  isActive?: boolean;
-}
 const routes = [
   {
     href: "/",

@@ -2,11 +2,16 @@ import Link from "next/link";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 
+interface NavButtonProps {
+  href: string;
+  label: string;
+  isActive: boolean;
+}
 export const NavButton = ({
   href,
   label,
   isActive
-}: Props) => {
+}: NavButtonProps) => {
   return (
     <Button
       asChild

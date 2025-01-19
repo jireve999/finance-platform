@@ -1,7 +1,7 @@
 "use client";
 import { toast } from "sonner";
 import { Loader2, Plus } from "lucide-react";
-import { useState } from "react";
+import { useState, Suspense } from "react";
 import { useNewTransaction } from "@/features/transactions/hooks/use-new-transaction";
 import { useGetTransactions } from "@/features/transactions/api/use-get-transactions";
 import { useBulkDeleteTransactions } from "@/features/transactions/api/use-bulk-delete-transactions";
@@ -144,4 +144,12 @@ const TransactionsPage = () => {
   );
 };
 
-export default TransactionsPage;
+const TransactionsPageWithSuspense = () => {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <TransactionsPage />
+    </Suspense>
+  );
+};
+
+export default TransactionsPageWithSuspense;

@@ -1,4 +1,5 @@
 "use client";
+import { Suspense } from 'react';
 import { Loader2, Plus } from "lucide-react";
 import { useNewAccount } from "@/features/accounts/hooks/use-new-account";
 import { useGetAccounts } from "@/features/accounts/api/use-get-accounts";
@@ -69,4 +70,13 @@ const AccountsPage = () => {
   );
 };
 
-export default AccountsPage;
+
+const AccountsPageWithSuspense = () => {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <AccountsPage />
+    </Suspense>
+  );
+};
+
+export default AccountsPageWithSuspense;

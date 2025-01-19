@@ -69,5 +69,5 @@ export const AccountFilter = () => {
         ))}
       </SelectContent>
     </Select>
-  )
+  );
 }

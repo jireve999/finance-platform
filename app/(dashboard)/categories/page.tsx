@@ -1,4 +1,5 @@
 "use client";
+import { Suspense } from 'react';
 import { Loader2, Plus } from "lucide-react";
 import { useNewCategory } from "@/features/categories/hooks/use-new-category";
 import { useGetCategories } from "@/features/categories/api/use-get-categories";
@@ -68,5 +69,12 @@ const CategoriesPage = () => {
     </div>
   );
 };
+const CategoriesPageWithSuspense = () => {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <CategoriesPage />
+    </Suspense>
+  );
+};
 
-export default CategoriesPage;
+export default CategoriesPageWithSuspense;
