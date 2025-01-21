@@ -17,6 +17,7 @@ import { PieVariant } from "@/components/pie-variant";
 import { RadarVariant } from "@/components/radar-variant";
 import { RadialVariant } from "@/components/radial-variant";
 import { Skeleton } from "@/components/ui/skeleton";
+import { usePaywall } from "@/features/subscriptioins/hooks/use-paywall";
 
 
 type Props = {
@@ -28,9 +29,13 @@ type Props = {
 
 export const SpendingPie = ({data = []}: Props) => {
   const [chartType, setChartType] = useState("pie");
+  const { shouldBlock, triggerPaywall } = usePaywall();
 
   const onTypeChange = (type: string) => {
-    // TODO: Add paywall
+    if(type !== "pie" && shouldBlock) {
+      triggerPaywall();
+      return;
+    }
     setChartType(type);
   };
   return (

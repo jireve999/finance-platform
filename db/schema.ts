@@ -2,6 +2,7 @@ import { z } from 'zod';
 import { createInsertSchema } from 'drizzle-zod';
 import { relations } from "drizzle-orm";
 import { integer, pgTable, text, timestamp } from 'drizzle-orm/pg-core';
+import { User } from 'lucide-react';
 
 export const accounts = pgTable("accounts", {
   id: text("id").primaryKey(),
@@ -62,4 +63,11 @@ export const connectedBanks = pgTable("connected_banks", {
   id: text("id").primaryKey(),
   userId: text("user_id").notNull(),
   accessToken: text("access_token").notNull(),
+});
+
+export const subscriptions = pgTable("subscriptions", {
+  id: text("id").primaryKey(),
+  userId: text("user_id").notNull().unique(),
+  subscriptionId: text("subscription_id").notNull().unique(),
+  status: text("status").notNull(),
 });

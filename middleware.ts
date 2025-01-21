@@ -4,7 +4,7 @@ import { clerkMiddleware, createRouteMatcher} from '@clerk/nextjs/server'
 // API also can be accessed although not signed in
 const isProtectedRoute = createRouteMatcher([
   '/',
-  // '/api(.*)',
+  // '/api(.*)', // webhooks can not be used if use others
 ])
 
 export default clerkMiddleware(async (auth, req) => {
