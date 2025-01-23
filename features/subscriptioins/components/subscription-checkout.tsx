@@ -13,7 +13,6 @@ export const SubscriptionCheckout = () => {
     <Button
       onClick={() => checkout.mutate()}
       disabled={checkout.isPending || isLoadingSubscription}
-      variant="ghost"
       size="sm"
     >
       {subscription ? "Manage" : "Upgrade"}

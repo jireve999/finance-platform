@@ -52,7 +52,6 @@ export const PlaidConnect = () => {
       onClick={onClick}
       disabled={isDisabled}
       size="sm"
-      variant="ghost"
     >
       Connect
     </Button>

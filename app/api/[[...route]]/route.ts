@@ -18,15 +18,8 @@ app.use('*', cors({
   origin: 'https://finance-platform-tau.vercel.app',
   allowMethods: ['GET', 'POST', 'PATCH', 'DELETE'],
   allowHeaders: ['Content-Type', 'Authorization'],
-  exposeHeaders: ['Content-Length', 'X-Kuma-Revision'],
   credentials: true,
 }));
-
-// Add a simple logger to verify CORS is applied
-app.use('*', (c, next) => {
-  console.log('CORS middleware applied');
-  return next();
-});
 
 const routes = app
   .route('/accounts', accounts)

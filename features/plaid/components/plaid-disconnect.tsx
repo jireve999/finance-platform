@@ -23,13 +23,12 @@ export const PlaidDisconnect = () => {
     <>
       <Dialog />
       <Button
-      onClick={onClick}
-      disabled={deleteConnectedBank.isPending}
-      size="sm"
-      variant="ghost"
-    >
-      Disconnect
-    </Button>
+        onClick={onClick}
+        disabled={deleteConnectedBank.isPending}
+        size="sm"
+      >
+        Disconnect
+      </Button>
     </>
   );
 }
