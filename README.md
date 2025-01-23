@@ -52,4 +52,4 @@ npm run db:studio
 ```
 
 ## Deploy on Vercel
-!Confirm that you have subscribed to Clerk's Pro version and Make sure that your application is configured to use the live key rather than the test key.
+please visit: [https://finance-platform-tau.vercel.app]
