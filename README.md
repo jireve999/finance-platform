@@ -1,5 +1,4 @@
-## Description
-This is a Finance Saas Platform with ability to track your income and expenses, categorize transactions and assign them to specific accounts, as well as how to import transactions using a CSV file, connect to your bank account using Plaid, and monetize this product using Lemon Squeezy.
+# Finance SaaS Platform
 
 ## Tech Stack
 ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
@@ -16,6 +15,15 @@ This is a Finance Saas Platform with ability to track your income and expenses, 
 <!-- ![Docker](https://img.shields.io/badge/Docker-2CA5E0?style=for-the-badge&logo=docker&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
 ![CI/CD](https://img.shields.io/badge/CI/CD-007BFF?style=for-the-badge&logo=githubactions&logoColor=white) -->
+
+## Description
+This is a Finance SaaS Platform with ability to track your income and expenses, categorize transactions and assign them to specific accounts, as well as how to import transactions using a CSV file, connect to your bank account using Plaid, and monetize this product using Lemon Squeezy.
+
+<img src="public/finance1.png" width="200" alt="finance1">
+<img src="public/finance2.jpg" width="200" alt="finance2">
+
+<img src="public/finance3.jpg" width="200" alt="finance3">
+<img src="public/finance4.jpg" width="200" alt="finance4">
 
 ## Getting Started
 First, run the development server:
