@@ -19,11 +19,9 @@
 ## Description
 This is a Finance SaaS Platform with ability to track your income and expenses, categorize transactions and assign them to specific accounts, as well as how to import transactions using a CSV file, connect to your bank account using Plaid, and monetize this product using Lemon Squeezy.
 
-<img src="public/finance1.png" width="200" alt="finance1">
-<img src="public/finance2.jpg" width="200" alt="finance2">
+<img src="public/finance1.png" width="400" alt="finance1"><img src="public/finance2.jpg" width="400" alt="finance2">
 
-<img src="public/finance3.jpg" width="200" alt="finance3">
-<img src="public/finance4.jpg" width="200" alt="finance4">
+<img src="public/finance3.jpg" width="400" alt="finance3"><img src="public/finance4.jpg" width="400" alt="finance4">
 
 ## Getting Started
 First, run the development server:
