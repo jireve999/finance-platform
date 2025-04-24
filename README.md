@@ -1,5 +1,5 @@
 # Finance SaaS Platform  
-## ps: please select data from=2024-12-08&to=2025-01-31, almost time has no data
+- ps: PLease add a new transaction before see the chart info at overview page, otherwise it will show no data.
 
 ## Tech Stack
 ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
